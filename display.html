@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<body>
+    <head>
+       <link rel="stylesheet" src="watch-css/Watch.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="outer">
+                 <div class="inner">
+                    <div class="clock-container">
+                     </div>
+                     <div class="top-text">DUAL TIME</div>
+                     <div class="funnc-text">
+
+                     </div>
+                     <span CLASS="center-text">SPORTS</span>
+                </div>
+                <ul class="buttons"> </ul>
+            </div>
+        </div>
+        <script>
+            const hr_hand = document.getElementsByClassName("hour-hand");
+const min_hand = document.getElementsByClassName("minnute-hand");
+const sec_hand = document.getElementsByClassName("second-hand");
+const val = document.querySelectorAll("#time .value");
+const dt = document.getElementsByClassName("date");
+const options = {
+    weekday: 'short' , month : 'short' , day:'numeric'
+};
+let indicator = document.getElementsByClassName('indicator')
+
+setInterval(() => {
+    
+    let date = new date();
+    dt.firstElementchild.innertext= date.tolocaleDatestring('en-US',options);
+
+    let h=date.gethours();
+    let m= date.getminutes();
+    let s= date.getseconds();
+    {}
+}, 1000);
+        </script>
+    </body>
+</body>
